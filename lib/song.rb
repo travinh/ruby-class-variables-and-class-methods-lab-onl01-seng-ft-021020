@@ -55,10 +55,9 @@ class Song
         hash[:genre] =1 
       else 
          hash[:genre] +=1 
-       end
+      end
     end
     hash
-    
   end
   
 end
