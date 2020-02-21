@@ -52,8 +52,12 @@ class Song
     hash ={}
     @@genres.each do |genre|
       if !hash.key?(genre)
-        hash 
+        hash[:genre] =1 
+      else 
+         hash[:genre] +=1 
+       end
     end
+    hash
     
   end
   
