@@ -39,15 +39,13 @@ class Song
   end
   
   def self.artists
-    hash ={}
+    array = []
     @@artists.each do |artist|
-      if !hash.key?(artist)
-        hash[artist] =1 
-      else 
-         hash[artist] +=1 
+      if !array.include?(artist)
+        array << artist
       end
     end
-    hash
+    array
   end
   
   def self.genre_count
