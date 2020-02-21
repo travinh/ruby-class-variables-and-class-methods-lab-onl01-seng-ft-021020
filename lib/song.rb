@@ -51,7 +51,8 @@ class Song
   def genre_count
     hash ={}
     @@genres.each do |genre|
-      if hash.keys
+      if !hash.key?(genre)
+        hash 
     end
     
   end
